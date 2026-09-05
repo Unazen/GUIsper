@@ -30,7 +30,7 @@ cat > "$DESKTOP_DIR/whisper-local.desktop" <<EOF
 Type=Application
 Name=Whisper Local
 Comment=Локальное распознавание речи через OpenAI Whisper
-Exec="$HOME/Applications/whisper/.venv/bin/python $HOME/.local/share/whisper-local/app.py"
+Exec=$HOME/Applications/whisper/.venv/bin/python $HOME/.local/share/whisper-local/app.py
 Icon=audio-input-microphone
 Terminal=false
 Categories=AudioVideo;Audio;Utility;
