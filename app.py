@@ -130,7 +130,7 @@ class WhisperWindow(QMainWindow):
 
         options.addWidget(QLabel("Модель:"))
         self.model_combo = QComboBox()
-        self.model_combo.addItems(["small","base", "tiny"])
+        self.model_combo.addItems(["small","base","tiny","turbo","medium","large"])
         self.model_combo.setCurrentText("small")
         options.addWidget(self.model_combo)
 

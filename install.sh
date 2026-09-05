@@ -5,6 +5,7 @@ APP_DIR="$HOME/.local/share/whisper-local"
 BIN_DIR="$HOME/.local/bin"
 DESKTOP_DIR="$HOME/.local/share/applications"
 
+
 mkdir -p "$APP_DIR" "$BIN_DIR" "$DESKTOP_DIR"
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
@@ -29,7 +30,7 @@ cat > "$DESKTOP_DIR/whisper-local.desktop" <<EOF
 Type=Application
 Name=Whisper Local
 Comment=Локальное распознавание речи через OpenAI Whisper
-Exec=$BIN_DIR/whisper-local
+Exec="$HOME/Applications/whisper/.venv/bin/python $HOME/.local/share/whisper-local/app.py"
 Icon=audio-input-microphone
 Terminal=false
 Categories=AudioVideo;Audio;Utility;
